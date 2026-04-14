@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCX Japan 13 Consolidated Checklist</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .header { background: linear-gradient(to right, #9c27b0, #673ab7); color: white; padding: 1rem; text-align: center; }
+        .tabs { display: flex; justify-content: space-around; background-color: #f1f1f1; padding: 1rem; }
+        .tab { cursor: pointer; padding: 1rem; }
+        .content { display: none; padding: 1rem; }
+        .active { display: block; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+        .section { border: 1px solid #ddd; padding: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BCX Japan 13 Consolidated Checklist</h1>
+    </div>
+    <div class="tabs">
+        <div class="tab" onclick="showContent('hotels')">🏨 Hotels</div>
+        <div class="tab" onclick="showContent('experiences')">⭐ Experiences</div>
+        <div class="tab" onclick="showContent('internal_movements')">🚄 Internal Movements</div>
+        <div class="tab" onclick="showContent('restaurants')">🍽️ Restaurants</div>
+        <div class="tab" onclick="showContent('overview')">Overview</div>
+        <div class="tab" onclick="showContent('playbook')">Faci Playbook</div>
+        <div class="tab" onclick="showContent('daily_comms')">Daily Comms D1-D8</div>
+        <div class="tab" onclick="showContent('enhanced_gameplan')">Enhanced Gameplan</div>
+    </div>
+
+    <div id="hotels" class="content section active">
+        <h2>🏨 Hotels</h2>
+        <div class="grid">
+            <div>
+                <h3>Gracery Asakusa</h3>
+                <ul>
+                    <li>Checklist Item 1</li>
+                    <li>Checklist Item 2</li>
+                    <li>Checklist Item 3</li>
+                    <li>Checklist Item 4</li>
+                    <li>Checklist Item 5</li>
+                    <li>Checklist Item 6</li>
+                    <li>Checklist Item 7</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Solaria Kyoto</h3>
+                <ul>
+                    <li>Checklist Item 1</li>
+                    <li>Checklist Item 2</li>
+                    <li>Checklist Item 3</li>
+                    <li>Checklist Item 4</li>
+                    <li>Checklist Item 5</li>
+                    <li>Checklist Item 6</li>
+                    <li>Checklist Item 7</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Lively Osaka</h3>
+                <ul>
+                    <li>Checklist Item 1</li>
+                    <li>Checklist Item 2</li>
+                    <li>Checklist Item 3</li>
+                    <li>Checklist Item 4</li>
+                    <li>Checklist Item 5</li>
+                    <li>Checklist Item 6</li>
+                    <li>Checklist Item 7</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="experiences" class="content section">
+        <h2>⭐ Experiences</h2>
+        <table>
+            <tr>
+                <th>Experience</th>
+                <th>Booking</th>
+                <th>Payment</th>
+                <th>Confirmation</th>
+            </tr>
+            <tr>
+                <td>Tokyo Crawl</td>
+                <td><input type="text" placeholder="Booking Info"></td>
+                <td><input type="text" placeholder="Payment Info"></td>
+                <td><input type="text" placeholder="Confirmation Info"></td>
+            </tr>
+            <tr>
+                <td>TeamLabs</td>
+                <td><input type="text" placeholder="Booking Info"></td>
+                <td><input type="text" placeholder="Payment Info"></td>
+                <td><input type="text" placeholder="Confirmation Info"></td>
+            </tr>
+            <tr>
+                <td>Mt Fuji</td>
+                <td><input type="text" placeholder="Booking Info"></td>
+                <td><input type="text" placeholder="Payment Info"></td>
+                <td><input type="text" placeholder="Confirmation Info"></td>
+            </tr>
+            <tr>
+                <td>Calligraphy</td>
+                <td><input type="text" placeholder="Booking Info"></td>
+                <td><input type="text" placeholder="Payment Info"></td>
+                <td><input type="text" placeholder="Confirmation Info"></td>
+            </tr>
+            <tr>
+                <td>Osaka</td>
+                <td><input type="text" placeholder="Booking Info"></td>
+                <td><input type="text" placeholder="Payment Info"></td>
+                <td><input type="text" placeholder="Confirmation Info"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="internal_movements" class="content section">
+        <h2>🚄 Internal Movements</h2>
+        <table>
+            <tr>
+                <th>Route</th>
+                <th>Ticket</th>
+                <th>Platform</th>
+                <th>Boarding</th>
+            </tr>
+            <tr>
+                <td>Tokyo → Kyoto</td>
+                <td><input type="text" placeholder="Ticket Info"></td>
+                <td><input type="text" placeholder="Platform Info"></td>
+                <td><input type="text" placeholder="Boarding Info"></td>
+            </tr>
+            <tr>
+                <td>Kyoto → Osaka</td>
+                <td><input type="text" placeholder="Ticket Info"></td>
+                <td><input type="text" placeholder="Platform Info"></td>
+                <td><input type="text" placeholder="Boarding Info"></td>
+            </tr>
+            <tr>
+                <td>Mt Fuji Vehicle</td>
+                <td><input type="text" placeholder="Ticket Info"></td>
+                <td><input type="text" placeholder="Platform Info"></td>
+                <td><input type="text" placeholder="Boarding Info"></td>
+            </tr>
+            <tr>
+                <td>Nara Train</td>
+                <td><input type="text" placeholder="Ticket Info"></td>
+                <td><input type="text" placeholder="Platform Info"></td>
+                <td><input type="text" placeholder="Boarding Info"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="restaurants" class="content section">
+        <h2>🍽️ Restaurants</h2>
+        <table>
+            <tr>
+                <th>Dining Event</th>
+                <th>Reservation</th>
+                <th>Seating</th>
+                <th>Veg Options</th>
+                <th>Backups</th>
+                <th>Triple Confirm</th>
+            </tr>
+            <tr>
+                <td>Event 1</td>
+                <td><input type="text" placeholder="Reservation Info"></td>
+                <td><input type="text" placeholder="Seating Info"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="text" placeholder="Backup Info"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Event 2</td>
+                <td><input type="text" placeholder="Reservation Info"></td>
+                <td><input type="text" placeholder="Seating Info"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="text" placeholder="Backup Info"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Event 3</td>
+                <td><input type="text" placeholder="Reservation Info"></td>
+                <td><input type="text" placeholder="Seating Info"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="text" placeholder="Backup Info"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Event 4</td>
+                <td><input type="text" placeholder="Reservation Info"></td>
+                <td><input type="text" placeholder="Seating Info"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="text" placeholder="Backup Info"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Event 5</td>
+                <td><input type="text" placeholder="Reservation Info"></td>
+                <td><input type="text" placeholder="Seating Info"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="text" placeholder="Backup Info"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Event 6</td>
+                <td><input type="text" placeholder="Reservation Info"></td>
+                <td><input type="text" placeholder="Seating Info"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="text" placeholder="Backup Info"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="overview" class="content section">
+        <h2>Overview</h2>
+        <p>Editable dates and general overview.</p>
+    </div>
+
+    <div id="playbook" class="content section">
+        <h2>Faci Playbook</h2>
+        <h3>Where It Breaks</h3>
+        <p>Details about issue areas.</p>
+        <h3>Where Magic Happens</h3>
+        <p>Details about successful points.</p>
+    </div>
+
+    <div id="daily_comms" class="content section">
+        <h2>Daily Comms D1-D8</h2>
+        <p>Copy-paste templates for daily communication.</p>
+    </div>
+
+    <div id="enhanced_gameplan" class="content section">
+        <h2>Enhanced Gameplan</h2>
+        <p>Add/edit functionality for planning.</p>
+    </div>
+
+    <script>
+        function showContent(tabId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
