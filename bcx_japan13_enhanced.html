@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Comprehensive Dashboard</h1>
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('overview')">Overview</button>
+            <button class="tab-button" onclick="openTab('checklist')">Consolidated Sign-off Checklist</button>
+            <button class="tab-button" onclick="openTab('experiences')">Experiences Checklist</button>
+            <button class="tab-button" onclick="openTab('movements')">Internal Movements</button>
+            <button class="tab-button" onclick="openTab('restaurants')">Restaurants Tracking</button>
+            <button class="tab-button" onclick="openTab('playbook')">Faci Playbook</button>
+            <button class="tab-button" onclick="openTab('dailyComms')">Daily Comms</button>
+            <button class="tab-button" onclick="openTab('gameplan')">Enhanced Gameplan</button>
+        </div>
+        <div id="overview" class="tab-content active">
+            <h2>Overview</h2>
+            <label for="editable-dates">Editable Dates:</label>
+            <input type="date" id="editable-dates" />
+        </div>
+        <div id="checklist" class="tab-content">
+            <h2>Consolidated Sign-off Checklist</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hotel</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gracery Asakusa</td>
+                        <td><input type="checkbox" /></td>
+                    </tr>
+                    <tr>
+                        <td>Solaria Kyoto</td>
+                        <td><input type="checkbox" /></td>
+                    </tr>
+                    <tr>
+                        <td>Lively Osaka</td>
+                        <td><input type="checkbox" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="experiences" class="tab-content">
+            <h2>Experiences Checklist</h2>
+            <p>Your checklist items here...</p>
+        </div>
+        <div id="movements" class="tab-content">
+            <h2>Internal Movements</h2>
+            <p>Your internal movements tracking here...</p>
+        </div>
+        <div id="restaurants" class="tab-content">
+            <h2>Restaurants Tracking</h2>
+            <p>Your restaurant tracking here...</p>
+        </div>
+        <div id="playbook" class="tab-content">
+            <h2>Faci Playbook</h2>
+            <h3>Where It Breaks</h3>
+            <p>Your notes on where it breaks...</p>
+            <h3>Where Magic Happens</h3>
+            <p>Your notes on where magic happens...</p>
+        </div>
+        <div id="dailyComms" class="tab-content">
+            <h2>Daily Comms</h2>
+            <p>Daily communications from D1 to D8...</p>
+        </div>
+        <div id="gameplan" class="tab-content">
+            <h2>Enhanced Gameplan</h2>
+            <p>Add/Edit/Links functionality goes here...</p>
+        </div>
+    </div>
+    <script>
+        function openTab(tabName) {
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(tabName).classList.add('active');
+        }
+    </script>
+</body>
+</html>
